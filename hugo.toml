@@ -1,0 +1,6 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'まい制服くらぶ'
+theme = "reimu"
+
+

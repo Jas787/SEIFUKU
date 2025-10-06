@@ -1,0 +1,831 @@
+<!doctype html>
+<html
+  lang="en-us" 
+  data-theme-mode="auto"
+  >
+  <head>
+	<meta name="generator" content="Hugo 0.149.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  My New Hugo Site
+</title>
+<meta
+  name="description"
+  content="少女祈祷中..."
+/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_4k4bc36ef96.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/css/loader.css" />
+<meta property="og:type" content="website" />
+  <meta property="og:title" content="My New Hugo Site" />
+  <meta
+    property="og:description"
+    content="少女祈祷中..."
+  />
+  <meta property="og:url" content="http://localhost:1313/" />
+  <meta
+    property="og:site_name"
+    content="My New Hugo Site"
+  />
+  <meta
+    property="og:image"
+    content="/"
+  />
+  <meta property="article:author" content="D-Sketon" />
+  <meta property="article:published_time" content="2025-09-13T15:43:41&#43;09:00" />
+  <meta property="article:modified_time" content="2025-09-13T15:43:41&#43;09:00" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/" /><link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="My New Hugo Site">
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" />
+<link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
+    integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Loading...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+This article does not have a corresponding language version
+</div>
+<div id="heatmap-tooltip"></div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav"><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon rotate'>&#xe62b;</div>
+        <a class="main-nav-link" href="/">Home</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon rotate'>&#xe62b;</div>
+        <a class="main-nav-link" href="/archives">Archives</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon rotate'>&#xe62b;</div>
+        <a class="main-nav-link" href="/about">About</a>
+      </span><span class="main-nav-link-wrap">
+        <div class='main-nav-icon icon rotate'>&#xe62b;</div>
+        <a class="main-nav-link" href="/friend">Friend</a>
+      </span><a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav"><a id="nav-rss-link" class="nav-icon" href="/index.xml" title="RSS Feed" target="_blank"></a></nav></div>
+<header id="header"><picture></picture><img  fetchpriority="high" src="/images/banner.webp" alt="My New Hugo Site"><div id="header-outer">
+    <div id="header-title"><span id="logo">
+            <h1 data-aos="slide-up">My New Hugo Site</h1>
+          </span><h2 id="subtitle-wrap" data-aos="slide-down"><span id="subtitle">少女祈祷中...</span></h2></div>
+  </div>
+</header><div id="content"
+          
+          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper-container "><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="D-Sketon"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">D-Sketon</div>
+  <div class="sidebar-description">少女祈祷中...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">143</div>
+  </div>
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      0
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">0</div>
+  </a>
+</div>
+<div class="sidebar-social"></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon rotate'>&#xe62b;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon rotate'>&#xe62b;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon rotate'>&#xe62b;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/friend"
+        aria-label="Friend"
+      ></a>
+      <div class='sidebar-menu-icon icon rotate'>&#xe62b;</div>
+      <div class="sidebar-menu-link">Friend</div>
+    </div></div>
+</div>
+  </div><div class="sidebar-widget"><div class="widget-wrapper">
+    <div
+      class="widget-wrap"
+      data-aos="fade-up"
+    >
+      <h3 class="widget-title">Recent Posts</h3>
+      <div class="widget">
+        <ul><li>
+              <a href="/post/sp0015/">あの頃君は若かった ~ 若い頃と変わらぬ美貌の熟女 </a>
+            </li><li>
+              <a href="/post/s0119/">いっぱいエッチしちゃった</a>
+            </li><li>
+              <a href="/post/s0030/">お漏らししまくってイキまくるスケスケ制服コスの素人むすめ</a>
+            </li><li>
+              <a href="/post/s0027/">ガッ尻 ～オマンコだけでは物足りないからアナルにも挿れて～</a>
+            </li><li>
+              <a href="/post/sp0001/">セーラーコスプレで性感フルコース 山岸るな</a>
+            </li></ul>
+      </div>
+    </div>
+  </div></div></div></aside>
+<section id="main"><div class="post-wrapper">
+  <div
+    class="
+      post-wrap left
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0307/"
+        aria-label="放課後に、仕込んでください ～天然Iカップを虐めてください～"
+      >
+      </a><div
+      class="
+        post-cover left
+      "
+    ><img
+          data-src="/images/S0307.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >18 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">放課後に、仕込んでください ～天然Iカップを虐めてください～</h2>
+      <article class="post-article">放課後に、仕込んでください ～天然Iカップを虐めてください～
+放課後の教室を抜け出して、制服姿のまま向かってくるのは、天然Iカップの持ち主、祈里きすみちゃん。色白でふんわり柔らかい肌に、まん丸で大きな瞳がぱっちり。何より目を引くのは、胸元をはち切れんばかりに押し上げる圧巻のIカップのバスト。制服姿のブレザーの下からも、その膨らみは一目でわかります。
+「き、きすみ、今日もいっぱい…いじめてほしい…」と、少し恥ずかしそうに言いながらも、目は期待と興奮でキラキラ。まだ学生の雰囲気が残る甘い顔立ちと、成熟した胸のアンバランスさが、見る者の目を釘付けにします。
+まずは生着替えからスタート。制服のブレザー …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap right
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0118/"
+        aria-label="永久保存版！未公開映像 4"
+      >
+      </a><div
+      class="
+        post-cover right
+      "
+    ><img
+          data-src="/images/S0118.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >11 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">永久保存版！未公開映像 4</h2>
+      <article class="post-article">永久保存版！未公開映像 4 👄💦
+今回の永久保存版は、未公開連続フェラヌキオムニバス！可愛い素人娘たちが、制服姿でお口も手もフル活用、男のチンポをしゃぶり尽くす至極の映像です💖。
+まず登場するのは、黒髪色白の素朴系素人娘・芦川芽依ちゃん。大人しそうな雰囲気とは裏腹に、口に含んだ瞬間の吸引力は凄まじく、唾液でぬるぬるに濡れたお口でジュルジュルとフェラヌキ。舌先でチンポをくるくると転がし、手で優しく握ると、敏感な亀頭や玉も的確に刺激。顔を赤らめながらも小さな喘ぎ声を漏らし、「んっ…もっと…入れて…」と恥ずかしそうにおねだりする姿は、萌えMAXの破壊力です✨。
+次に登場するのは、肉感的なショートカッ …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap left
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0110/"
+        aria-label="永久保存版！未公開映像 5"
+      >
+      </a><div
+      class="
+        post-cover left
+      "
+    ><img
+          data-src="/images/S0110.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >24 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">永久保存版！未公開映像 5</h2>
+      <article class="post-article">永久保存版！未公開映像 5 💦💖
+制服姿で恥じらいながらも大胆にエロスを晒す 素人娘たち が登場する永久保存版、未公開映像第5弾です✨。今回の映像は、ただのフェラ抜きだけではなく、局部ドアップ映像つきで、彼女たちの 淫らな表情や体の反応 を余すところなく楽しめる仕様です😍。
+まず登場するのは、黒髪で笑顔が可愛い制服素人娘・結川ゆうちゃん💖。制服姿が似合いすぎて、見るだけでドキドキします。ブレザーやプリーツスカートの制服の隙間から覗く柔らかいおっぱいや、チラリと見えるパンティは、もう完全に妄想MAX状態💦。手マンでクリを刺激されると、じわりじわりとマン汁が溢れ出し、顔を赤らめながら「あっ…💦気持 …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap right
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0145/"
+        aria-label="秘蔵マンコセレクション 〜新年！初マンコを見てね〜"
+      >
+      </a><div
+      class="
+        post-cover right
+      "
+    ><img
+          data-src="/images/S0145.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >21 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">秘蔵マンコセレクション 〜新年！初マンコを見てね〜</h2>
+      <article class="post-article">秘蔵マンコセレクション 〜新年！初マンコを見てね〜💛
+新年の教室はまだ薄暗く、窓から差し込む柔らかい光が二人の可愛らしい制服姿を照らす🏫✨。今日は特別に、新年初の「マンコセレクション」💖。色白でフワッとした雰囲気のなつめちゃんと、清楚で大きな瞳が印象的なあおいちゃん、二人揃って制服を着たままオマンコ開きに挑戦してくれる日です💦。
+「ちょ、ちょっと…恥ずかしいです…💦」
+なつめちゃんは小さく俯きながらも、勇気を出して体操座りに。薄いパステルカラーのパンチラからチラリと見える太ももが刺激的で、M字開脚するとパンツ越しにオマンコがチラリ👀✨。あおいちゃんも同じように体操座りし、少し戸惑いながらも素直 …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap left
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0028/"
+        aria-label="素人ＡＶ面接 〜むっちりピチピチ制服に着替えて生中セックスしちゃいますぅ〜"
+      >
+      </a><div
+      class="
+        post-cover left
+      "
+    ><img
+          data-src="/images/S0028.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >14 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">素人ＡＶ面接 〜むっちりピチピチ制服に着替えて生中セックスしちゃいますぅ〜</h2>
+      <article class="post-article">素人ＡＶ面接 〜むっちりピチピチ制服に着替えて生中セックスしちゃいますぅ〜
+ぽちゃかわでニコニコ笑顔がチャーミングな森久保晴海ちゃん。面接当日、少し緊張した面持ちで現れる姿は、初々しさ全開。制服に着替える前の軽い面接では、照れ隠しの笑顔や小さな仕草がとても可愛く、思わず見とれてしまう💖。「今日は頑張ります…♡」と小さな声で囁きながら、ぴかぴかの瞳で見つめられると、ドキドキが止まらない。
+ブレザーを羽織り、スカートを整えた晴海ちゃん。制服姿もぴったりで、まだあどけない笑顔とむっちりボディのギャップがたまらない！白く柔らかい肌に、ピチピチの制服が映え、チラリと覗くセクシーな下着が、期待感をさらに高 …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap right
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0171/"
+        aria-label="素人AV面接 〜野外調教をJKでやっちゃいました〜"
+      >
+      </a><div
+      class="
+        post-cover right
+      "
+    ><img
+          data-src="/images/S0171.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >18 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">素人AV面接 〜野外調教をJKでやっちゃいました〜</h2>
+      <article class="post-article">素人AV面接 〜野外調教をJKでやっちゃいました〜💥
+今回の「素人AV面接」は、AV女優志望の有村千穂ちゃん💖。清楚系で小柄、自己申告で「可愛い」と言い切るちっちゃ可愛いドM系。攻められるのが大好きで、ソフトなプレイ希望ながらも、羞恥と快楽のギリギリ境界を攻められるのがたまらないタイプです。学生時代はブレザー制服だったけど、今回は「セーラー服を着てみたい」と希望。さらに丸いボールギャグを使って、口を塞がれつつ唾液がだらだら垂れる羞恥プレイも経験してみたいと…。小さな体で萌えMAXの欲望全開です😍。
+まずは撮影前の生着替えから💓。ガチガチに緊張している千穂ちゃんにボールギャグを装着。口が塞がれる …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap left
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0092/"
+        aria-label="素人JKスペシャルオムニバスBest20 Part 1"
+      >
+      </a><div
+      class="
+        post-cover left
+      "
+    ><img
+          data-src="/images/S0092.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >28 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">素人JKスペシャルオムニバスBest20 Part 1</h2>
+      <article class="post-article">素人JKスペシャルオムニバスBest20 Part 1 💕
+セーラー服やブラウス＆プリーツスカートの制服姿で、初々しくもエロ可愛い素人娘たちが乱れる激エロシーンを厳選した『素人JKスペシャルオムニバスBest20』パート1の登場です🎀。普通の女の子が制服姿で快感に悶え、全身で感じる姿は、萌え萌えMAX・過激MAX💖。今回は、10人の素人娘たちの激ヤバシーンをまとめてご紹介します😍。
+まずは、ムチロリ家出むすめの 西田るかちゃん。小柄でふんわりした体にプリプリの美乳、丸顔と大きな瞳が超キュート🎀。制服を着た瞬間から無邪気な笑顔を見せ、プリーツスカートをめくると下着越しに濡れたおマンコがちらり💦。 …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap right
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0059/"
+        aria-label="素人のお仕事 〜運送会社で事務員してます〜"
+      >
+      </a><div
+      class="
+        post-cover right
+      "
+    ><img
+          data-src="/images/S0059.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >15 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">素人のお仕事 〜運送会社で事務員してます〜</h2>
+      <article class="post-article">素人のお仕事 〜運送会社で事務員してます〜
+運送会社で事務員として働く川崎成美ちゃん。スレンダーで色白、ふんわりした笑顔が魅力的な素人OLです💼✨　お仕事帰りにちょっとだけ息抜き、という名目でホテルで待ち合わせ。制服姿のまま、まだ誰にも知られていない秘密の欲望を解き放ちます。「今日は、いっぱい気持ちよくしてあげます…💦」と恥ずかしそうに囁く成美ちゃん。
+玄関先に着くや否や、制服姿のまま即尺オネダリ開始！ちょっと戸惑いながらも、指先で胸を揉みながら「気持ちいい…♡」と小声で甘え、電マや手で刺激されるとすぐにイキまくり💖　職場の制服がしっかりフィットした細身の体に、オナニーと快感で小刻みに震える動 …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap left
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0127/"
+        aria-label="素人むすめ Best30 Part 1"
+      >
+      </a><div
+      class="
+        post-cover left
+      "
+    ><img
+          data-src="/images/S0127.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >79 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">素人むすめ Best30 Part 1</h2>
+      <article class="post-article">💞素人むすめ☆Best Memories ～放課後のきらめき～
+放課後の教室には、夕陽がやさしく差し込んでいた。
+西の空がオレンジ色に染まり、窓の外では鳥の鳴き声が遠くで響いている。
+黒板の隅に書かれた「卒業まであと３日」の文字が、どこか切なく見えた。
+机を寄せ合い、10人の女の子たちは丸く座っている。
+それぞれが照れくさそうに笑いながら、思い出話をしていた。
+「ねぇ、みんな覚えてる？ あの屋上で見た夕焼け」
+そう言って微笑んだのは、桃子。
+黒髪ストレートで清楚な雰囲気。いつも真面目で、ちょっとだけお姉さんっぽい。
+けれど、今日はどこか甘い表情をしている。
+「うん、あのとき、風がすごく強くてス …</article>
+    </div>
+  </div>
+</div>
+<div class="post-wrapper">
+  <div
+    class="
+      post-wrap right
+    "
+    data-aos="fade-up"
+  ><a
+        class="post-link"
+        href="/post/s0125/"
+        aria-label="素人むすめ Best30 Part 3"
+      >
+      </a><div
+      class="
+        post-cover right
+      "
+    ><img
+          data-src="/images/S0125.jpg"
+          data-sizes="auto"
+          alt=""
+          class="lazyload"
+        /></div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span
+          ><span class="icon-calendar"></span
+          >2025-09-13</span
+        ><span
+          ><span class="icon-pencil"></span
+          >19 words</span
+        >
+        <span
+          ><span class="icon-clock"></span
+          >1 min</span
+        >
+      </div>
+      <h2 class="post-title">素人むすめ Best30 Part 3</h2>
+      <article class="post-article">素人むすめ Best30 Part 3 💦
+今回は可愛くて初々しい普通の素人娘たちの激エロシーンを厳選した**『素人むすめ Best30』パート3**。永久保存版ともいえる内容で、合計11人の美少女たちの恥ずかしい姿をたっぷり収録しています。
+トップバッターはHカップ美乳の深美せりなちゃん。制服姿に生着替えすると、巨乳がブラウスに押し付けられ揺れ、初々しい表情でドキドキ。未経験のクンニに挑戦し、ローターや手マンで敏感なおマンコを責められると、「あっ…んんっ…」と小さく喘ぎ声を漏らすその姿に男心は完全ノックアウト。挿入されるとプリプリの桃尻を突き出し、腰を小刻みにくねらせながらGカップの胸を揺ら …</article>
+    </div>
+  </div>
+</div>
+<nav id="page-nav" data-aos="fade-up"><a class="extend prev" rel="prev" href="/page/13/">
+      &laquo;
+      Prev</a><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/15/">
+      Next &raquo;
+    </a></nav>
+</section>
+        </div><footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2025<span class="footer-info-sep rotate"></span>
+      D-Sketon
+    </div><div>
+        Powered by&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          >Hugo</a
+        >&nbsp; Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;3.8k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;02:23</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Number of visits&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Number of visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav">
+  <div class="sidebar-wrap"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="D-Sketon"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">D-Sketon</div>
+  <div class="sidebar-description">少女祈祷中...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">143</div>
+  </div>
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      0
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">0</div>
+  </a>
+</div>
+<div class="sidebar-social"></div>
+<div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/"
+        aria-label="Home"
+      ></a>
+      <div class='sidebar-menu-icon icon rotate'>&#xe62b;</div>
+      <div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/archives"
+        aria-label="Archives"
+      ></a>
+      <div class='sidebar-menu-icon icon rotate'>&#xe62b;</div>
+      <div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/about"
+        aria-label="About"
+      ></a>
+      <div class='sidebar-menu-icon icon rotate'>&#xe62b;</div>
+      <div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/friend"
+        aria-label="Friend"
+      ></a>
+      <div class='sidebar-menu-icon icon rotate'>&#xe62b;</div>
+      <div class="sidebar-menu-link">Friend</div>
+    </div></div>
+</div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js" ></script><script src="/js/aos.js" ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" data-pjax></script><script
+    src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
+    integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
+  if (window.firework) {
+    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"var(--red-0)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
+    options.excludeElements = options.excludeelements;
+    delete options.excludeelements;
+    window.firework(options);
+  }
+</script>
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "D-Sketon",
+          title: "My New Hugo Site",
+          url: "http:\/\/localhost:1313\/",
+          description: "",
+          cover: "http:\/\/localhost:1313\/images\/banner.webp",
+        };
+      </script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    asyncintegrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+  </script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>
